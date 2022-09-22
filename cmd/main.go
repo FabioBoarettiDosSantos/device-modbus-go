@@ -14,7 +14,7 @@ import (
 )
 
 const (
-	serviceName string = "device-modbus"
+	serviceName string = "eaton-device-modbus"
 )
 
 func main() {
