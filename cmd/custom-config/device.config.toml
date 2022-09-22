@@ -1,0 +1,12 @@
+[[DeviceList]]
+    Name = "Modbus-TCP-DGS-EXT"
+    ProfileName = "DGS-EXT"
+    Description = "This device is DGS-EXT"
+    labels = [ "DGS","modbus TCP" ]
+    [DeviceList.Protocols]
+        [DeviceList.Protocols.modbus-tcp]
+            Address = "10.231.224.220"
+            Port = "502"
+            UnitID = "0"
+            Timeout = "5"
+            IdleTimeout = "5"

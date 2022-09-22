@@ -1,0 +1,3714 @@
+apiVersion: "v2"
+name: DGS-EXT
+manufacturer: Eaton
+description: The Eaton DGS over Modbus TCP.
+model: DGS
+labels: [Web, Modbus TCP, SNMP]
+deviceResources:
+- description: StatusReg1
+  name: StatusReg1
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    pushValueToMap: true
+- description: StatusReg2
+  name: StatusReg2
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    pushValueToMap: true
+- description: StatusReg3
+  name: StatusReg3
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    pushValueToMap: true
+- description: StatusReg4
+  name: StatusReg4
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    pushValueToMap: true
+- description: Show if the system is ready
+  name: ReadyStatusBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1"
+    shift: "0"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: Show if the system is ready
+  name: FailurePrior1Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2"
+    shift: "-1"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: Show if the system is ready
+  name: FailurePrior2Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4"
+    shift: "-2"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: Safety source active
+  name: SafetySourceBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8"
+    shift: "-3"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: AE Szenario active
+  name: AEScenarioBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16"
+    shift: "-4"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: Manual reset
+  name: ManualResetBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32"
+    shift: "-5"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: Mains emergency operation
+  name: MainsEmergencyOperationBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "64"
+    shift: "-6"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: FT forerun active
+  name: FTForerunBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "128"
+    shift: "-7"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: FT active
+  name: FTBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "256"
+    shift: "-8"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: DT forerun active
+  name: DTForerunBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "512"
+    shift: "-9"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: DT active
+  name: DTBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1024"
+    shift: "-10"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: System blocked
+  name: SystemBlockedBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2048"
+    shift: "-11"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: System blocked (Input)
+  name: SystemBlockedInputBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4096"
+    shift: "-12"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: System blocked (Menu)
+  name: SystemBlockedMenuBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8192"
+    shift: "-13"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: System blocked (Webserver)
+  name: SystemBlockedWebserverBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16384"
+    shift: "-14"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: System blocked (BMS)
+  name: SystemBlockedBMSBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32768"
+    shift: "-15"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 1
+    useValueFromMap: true
+- description: Deep discharge protection active
+  name: DeepDischargeProtectionBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1"
+    shift: "0"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Delay on mains return
+  name: DelayOnMainsReturnBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2"
+    shift: "-1"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Reserved Bit 1
+  name: ReservedBit1
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4"
+    shift: "-2"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Luminaire search active
+  name: LuminaireSearchBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8"
+    shift: "-3"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Reserved Bit 2
+  name: ReservedBit2
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16"
+    shift: "-4"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: All luminaires ON active
+  name: AllLuminairesOnBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32"
+    shift: "-5"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Maintained light OFF active
+  name: MaintainedLightOffBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "64"
+    shift: "-6"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Non maintained light ON active
+  name: NonMaintainedLightOnBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "128"
+    shift: "-7"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Reserved Bit 3
+  name: ReservedBit3
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "256"
+    shift: "-8"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Learning current values active
+  name: LearningCurrentValuesBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "512"
+    shift: "-9"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: ISO failure search active
+  name: ISOFailureSearchBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1024"
+    shift: "-10"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Reserved Bit 4
+  name: ReservedBit4
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2048"
+    shift: "-11"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Service intervall exceed
+  name: ServiceIntervallExceedBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4096"
+    shift: "-12"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: FT intervall exceed
+  name: FTIntervallExceedBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8192"
+    shift: "-13"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: DT intervall exceed
+  name: DTIntervallExceedBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16384"
+    shift: "-14"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: 10 minutes to deep discharge protection
+  name: TenMinutesToDDPBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32768"
+    shift: "-15"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 2
+    useValueFromMap: true
+- description: Reset Deep discharge protection active
+  name: ResetDeepDischargeProtectionBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1"
+    shift: "0"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: ATSD failure
+  name: ATSDFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2"
+    shift: "-1"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: Luminaire failure
+  name: LuminaireFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4"
+    shift: "-2"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: Other failure
+  name: OtherFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8"
+    shift: "-3"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: Reserved Bit 5
+  name: ReservedBit5
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16"
+    shift: "-4"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: Battery charge failure
+  name: BatteryChargeFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32"
+    shift: "-5"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: BCM failure
+  name: BCMFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "64"
+    shift: "-6"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: ACU failure
+  name: ACUFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "128"
+    shift: "-7"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: PSU failure
+  name: PSUFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "256"
+    shift: "-8"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: CM failure
+  name: CMFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "512"
+    shift: "-9"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: BDM failure
+  name: BDMFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1024"
+    shift: "-10"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: BBS failure
+  name: BBSFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2048"
+    shift: "-11"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: Mains failure ATSD
+  name: MainsFailureATSDBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4096"
+    shift: "-12"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: Mains failure sum
+  name: MainsFailureSumBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8192"
+    shift: "-13"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: Mains failure DB
+  name: MainsFailureDBBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16384"
+    shift: "-14"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true
+- description: Mains failure 3PH
+  name: MainsFailure3PHBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32768"
+    shift: "-15"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 3
+    useValueFromMap: true    
+- description: Reserved 6
+  name: Reserved6Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1"
+    shift: "0"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Reserved 7
+  name: Reserved7Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2"
+    shift: "-1"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: ISO-Failure
+  name: ISOFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4"
+    shift: "-2"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Sum error
+  name: SumErrorBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8"
+    shift: "-3"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Duplicate ACU Bus ID
+  name: DuplicateACUBusIdBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16"
+    shift: "-4"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: BT Test allowed
+  name: BTTestAllowedBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32"
+    shift: "-5"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Fan Error
+  name: FanErrorBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "64"
+    shift: "-6"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: AE CU failure
+  name: AECUFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "128"
+    shift: "-7"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: 3PM IO /IO/TLS failure
+  name: ThreePMIOTLSFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "256"
+    shift: "-8"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Module Programming Active
+  name: ModuleProgrammingActiveBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "512"
+    shift: "-9"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Reserved 8
+  name: Reserved8Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1024"
+    shift: "-10"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Reserved 9
+  name: Reserved9Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2048"
+    shift: "-11"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Reserved 10
+  name: Reserved10Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4096"
+    shift: "-12"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Reserved 11
+  name: Reserved11Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8192"
+    shift: "-13"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Reserved 12
+  name: Reserved12Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16384"
+    shift: "-14"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Reserved 13
+  name: Reserved13Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32768"
+    shift: "-15"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 4
+    useValueFromMap: true
+- description: Temperature in the Battery Cabinet
+  name: Temperature
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Float32
+    readWrite: R
+    units: Celsius
+    minimum: "-20"
+    maximum: "70"
+    scale: "0.1"
+    defaultValue: "0"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: int16
+    startingAddress: 20
+- description: ATSD 1 TYPE
+  name: ATSD_1_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: true
+    mapDataIndex: 1  
+- description: ATSD 2 TYPE
+  name: ATSD_2_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 2  
+- description: ATSD 3 TYPE
+  name: ATSD_3_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 3  
+- description: ATSD 4 TYPE
+  name: ATSD_4_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 4  
+- description: ATSD 5 TYPE
+  name: ATSD_5_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 5  
+- description: ATSD 6 TYPE
+  name: ATSD_6_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 6  
+- description: ATSD 7 TYPE
+  name: ATSD_7_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 7  
+- description: ATSD 8 TYPE
+  name: ATSD_8_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 8  
+- description: ATSD 9 TYPE
+  name: ATSD_9_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 9  
+- description: ATSD 10 TYPE
+  name: ATSD_10_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 10  
+- description: ATSD 11 TYPE
+  name: ATSD_11_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 11  
+- description: ATSD 12 TYPE
+  name: ATSD_12_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 12  
+- description: ATSD 13 TYPE
+  name: ATSD_13_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 13  
+- description: ATSD 14 TYPE
+  name: ATSD_14_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 14  
+- description: ATSD 15 TYPE
+  name: ATSD_15_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 15  
+- description: ATSD 16 TYPE
+  name: ATSD_16_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 16  
+- description: ATSD 17 TYPE
+  name: ATSD_17_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 17  
+- description: ATSD 18 TYPE
+  name: ATSD_18_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 18  
+- description: ATSD 19 TYPE
+  name: ATSD_19_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 19  
+- description: ATSD 20 TYPE
+  name: ATSD_20_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 20  
+- description: ATSD 21 TYPE
+  name: ATSD_21_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 21  
+- description: ATSD 22 TYPE
+  name: ATSD_22_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 22  
+- description: ATSD 23 TYPE
+  name: ATSD_23_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 23  
+- description: ATSD 24 TYPE
+  name: ATSD_24_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 24  
+- description: ATSD 25 TYPE
+  name: ATSD_25_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 25  
+- description: ATSD 26 TYPE
+  name: ATSD_26_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 26  
+- description: ATSD 27 TYPE
+  name: ATSD_27_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 27  
+- description: ATSD 28 TYPE
+  name: ATSD_28_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 28  
+- description: ATSD 29 TYPE
+  name: ATSD_29_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 29  
+- description: ATSD 30 TYPE
+  name: ATSD_30_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 30  
+- description: ATSD 31 TYPE
+  name: ATSD_31_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 31  
+- description: ATSD 32 TYPE
+  name: ATSD_32_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 32  
+- description: ATSD 33 TYPE
+  name: ATSD_33_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 33  
+- description: ATSD 34 TYPE
+  name: ATSD_34_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 34  
+- description: ATSD 35 TYPE
+  name: ATSD_35_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 35  
+- description: ATSD 36 TYPE
+  name: ATSD_36_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 36  
+- description: ATSD 37 TYPE
+  name: ATSD_37_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 37  
+- description: ATSD 38 TYPE
+  name: ATSD_38_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 38  
+- description: ATSD 39 TYPE
+  name: ATSD_39_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 39  
+- description: ATSD 40 TYPE
+  name: ATSD_40_TYPE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 105
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 40
+- description: ATSD 1 STATE
+  name: ATSD_1_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: true
+    mapDataIndex: 1  
+- description: ATSD 2 STATE
+  name: ATSD_2_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 2  
+- description: ATSD 3 STATE
+  name: ATSD_3_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 3  
+- description: ATSD 4 STATE
+  name: ATSD_4_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 4  
+- description: ATSD 5 STATE
+  name: ATSD_5_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 5  
+- description: ATSD 6 STATE
+  name: ATSD_6_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 6  
+- description: ATSD 7 STATE
+  name: ATSD_7_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 7  
+- description: ATSD 8 STATE
+  name: ATSD_8_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 8  
+- description: ATSD 9 STATE
+  name: ATSD_9_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 9  
+- description: ATSD 10 STATE
+  name: ATSD_10_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 10  
+- description: ATSD 11 STATE
+  name: ATSD_11_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 11  
+- description: ATSD 12 STATE
+  name: ATSD_12_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 12  
+- description: ATSD 13 STATE
+  name: ATSD_13_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 13  
+- description: ATSD 14 STATE
+  name: ATSD_14_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 14  
+- description: ATSD 15 STATE
+  name: ATSD_15_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 15  
+- description: ATSD 16 STATE
+  name: ATSD_16_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 16  
+- description: ATSD 17 STATE
+  name: ATSD_17_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 17  
+- description: ATSD 18 STATE
+  name: ATSD_18_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 18  
+- description: ATSD 19 STATE
+  name: ATSD_19_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 19  
+- description: ATSD 20 STATE
+  name: ATSD_20_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 20  
+- description: ATSD 21 STATE
+  name: ATSD_21_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 21  
+- description: ATSD 22 STATE
+  name: ATSD_22_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 22  
+- description: ATSD 23 STATE
+  name: ATSD_23_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 23  
+- description: ATSD 24 STATE
+  name: ATSD_24_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 24  
+- description: ATSD 25 STATE
+  name: ATSD_25_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 25  
+- description: ATSD 26 STATE
+  name: ATSD_26_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 26  
+- description: ATSD 27 STATE
+  name: ATSD_27_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 27  
+- description: ATSD 28 STATE
+  name: ATSD_28_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 28  
+- description: ATSD 29 STATE
+  name: ATSD_29_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 29  
+- description: ATSD 30 STATE
+  name: ATSD_30_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 30  
+- description: ATSD 31 STATE
+  name: ATSD_31_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 31  
+- description: ATSD 32 STATE
+  name: ATSD_32_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 32  
+- description: ATSD 33 STATE
+  name: ATSD_33_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 33  
+- description: ATSD 34 STATE
+  name: ATSD_34_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 34  
+- description: ATSD 35 STATE
+  name: ATSD_35_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 35  
+- description: ATSD 36 STATE
+  name: ATSD_36_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 36  
+- description: ATSD 37 STATE
+  name: ATSD_37_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 37  
+- description: ATSD 38 STATE
+  name: ATSD_38_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 38  
+- description: ATSD 39 STATE
+  name: ATSD_39_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 39  
+- description: ATSD 40 STATE
+  name: ATSD_40_STATE
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawSTATE: Uint16
+    startingAddress: 145
+    stringRegisterSize: 40 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 40 
+- description: ISO failure (-)
+  name: ISOFailureNegativeBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1"
+    shift: "0"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    pushValueToMap: true
+- description: ISO failure (+)
+  name: ISOFailurePositiveBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2"
+    shift: "-1"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: Voltage too Low
+  name: VoltageTooLowBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4"
+    shift: "-2"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: Voltage too High
+  name: VoltageTooHighBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8"
+    shift: "-3"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: Battery Interruption
+  name: BatteryInterruptionBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16"
+    shift: "-4"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: CM Failure
+  name: ChargerCMFailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32"
+    shift: "-5"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: Auto Iso Test Failure
+  name: AutoIsoTestBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "64"
+    shift: "-6"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: Temperature Sensor Failure
+  name: TempSensorBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "128"
+    shift: "-7"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: String 1 failure
+  name: String1FailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "256"
+    shift: "-8"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: String 2 failure
+  name: String2FailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "512"
+    shift: "-9"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: String 3 failure
+  name: String3FailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1024"
+    shift: "-10"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: String 4 failure
+  name: String4FailureBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2048"
+    shift: "-11"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: ChargerReserved1
+  name: ChargerReserved1Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4096"
+    shift: "-12"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: ChargerReserved2
+  name: ChargerReserved2Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8192"
+    shift: "-13"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: ChargerReserved3
+  name: ChargerReserved3Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16384"
+    shift: "-14"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: ChargerReserved4
+  name: ChargerReserved4Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32768"
+    shift: "-15"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 5
+    useValueFromMap: true
+- description: Charger Reserved 5
+  name: ChargerReserved5Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1"
+    shift: "0"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    pushValueToMap: true
+- description: Capacity Error
+  name: CapacityErrorBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2"
+    shift: "-1"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Battery Error after Restart
+  name: BatteryErrorAfterRestartBit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4"
+    shift: "-2"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 6
+  name: ChargerReserved6Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8"
+    shift: "-3"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 7
+  name: ChargerReserved7Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16"
+    shift: "-4"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 8
+  name: ChargerReserved8Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32"
+    shift: "-5"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 9
+  name: ChargerReserved9Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "64"
+    shift: "-6"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 10
+  name: ChargerReserved10Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "128"
+    shift: "-7"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 11
+  name: ChargerReserved11Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "256"
+    shift: "-8"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 12
+  name: ChargerReserved12Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "512"
+    shift: "-9"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 13
+  name: ChargerReserved13Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "1024"
+    shift: "-10"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 14
+  name: ChargerReserved14Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "2048"
+    shift: "-11"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 15
+  name: ChargerReserved15Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "4096"
+    shift: "-12"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 16
+  name: ChargerReserved16Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "8192"
+    shift: "-13"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 17
+  name: ChargerReserved17Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "16384"
+    shift: "-14"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger Reserved 18
+  name: ChargerReserved18Bit
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+    mask: "32768"
+    shift: "-15"
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 6
+    useValueFromMap: true
+- description: Charger State
+  name: ChargerStateValue
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 7
+- description: System Name
+  name: SystemName
+  isHidden: true
+  tag: ""
+  properties:
+    valueType: String
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 917
+    stringRegisterSize: 41 
+deviceCommands:
+- name: Temperature
+  isHidden: false
+  readWrite: R
+  resourceOperations:
+  - deviceResource: Temperature
+- name: ReadAllStatus
+  isHidden: false
+  readWrite: R
+  resourceOperations:
+  - deviceResource: StatusReg1
+  - deviceResource: StatusReg2
+  - deviceResource: StatusReg3
+  - deviceResource: StatusReg4
+  - deviceResource: ReadyStatusBit
+    defaultValue: ""
+    mappings:
+      "0": FAULTY
+      "1": READY
+  - deviceResource: FailurePrior1Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: FailurePrior2Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: SafetySourceBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: AEScenarioBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ManualResetBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: MainsEmergencyOperationBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: FTForerunBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: FTBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: DTForerunBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: DTBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: SystemBlockedBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: SystemBlockedInputBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: SystemBlockedMenuBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: SystemBlockedWebserverBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: SystemBlockedBMSBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: DeepDischargeProtectionBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: DelayOnMainsReturnBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ReservedBit1
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: LuminaireSearchBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ReservedBit2
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: AllLuminairesOnBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: MaintainedLightOffBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: NonMaintainedLightOnBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ReservedBit3
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: LearningCurrentValuesBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ISOFailureSearchBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ReservedBit4
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ServiceIntervallExceedBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: FTIntervallExceedBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: DTIntervallExceedBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: TenMinutesToDDPBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ResetDeepDischargeProtectionBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ATSDFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: LuminaireFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: OtherFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ReservedBit5
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: BatteryChargeFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: BCMFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ACUFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: PSUFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: CMFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: BDMFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: BBSFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: MainsFailureATSDBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: MainsFailureSumBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: MainsFailureDBBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: MainsFailure3PHBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: Reserved6Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: Reserved7Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ISOFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: SumErrorBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: DuplicateACUBusIdBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: BTTestAllowedBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: FanErrorBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: AECUFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ThreePMIOTLSFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ModuleProgrammingActiveBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: Reserved8Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: Reserved9Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: Reserved10Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: Reserved11Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: Reserved12Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: Reserved13Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+- name: ReadAllChargeFailures
+  isHidden: false
+  readWrite: R
+  resourceOperations:
+  - deviceResource: ISOFailureNegativeBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ISOFailurePositiveBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: VoltageTooLowBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: VoltageTooHighBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: BatteryInterruptionBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerCMFailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: AutoIsoTestBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: TempSensorBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: String1FailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: String2FailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: String3FailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: String4FailureBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved1Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved2Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved3Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved4Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved5Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: CapacityErrorBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: BatteryErrorAfterRestartBit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved6Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved7Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved8Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved9Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved10Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved11Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved12Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved13Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved14Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved15Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved16Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved17Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+  - deviceResource: ChargerReserved18Bit
+    defaultValue: ""
+    mappings:
+      "0": CLEAR
+      "1": ACTIVE
+- name: ReadChargerState
+  isHidden: false
+  readWrite: R
+  resourceOperations:
+  - deviceResource: ChargerStateValue
+    defaultValue: "0"
+    mappings:
+      "0": NOT_INSTALLED
+      "1": NORMAL_MODE
+      "2": BATTERY_DISCHARGE
+      "3": FAILURE
+- name: ReadAllAtsdType
+  isHidden: false
+  readWrite: R
+  resourceOperations:
+  - deviceResource: ATSD_1_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_2_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_3_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_4_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_5_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_6_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_7_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_8_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_9_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_10_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_11_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_12_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_13_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_14_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_15_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_16_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_17_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_18_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_19_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_20_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_21_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_22_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_23_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_24_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_25_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_26_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_27_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_28_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_29_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_30_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_31_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_32_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_33_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_34_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_35_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_36_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_37_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_38_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_39_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+  - deviceResource: ATSD_40_TYPE
+    defaultValue: "0"
+    mappings:
+      "0": NO_ATSD_AVAILABLE
+      "1": 1_CIRCUIT_W_6A_CGS
+      "2": 2_CIRCUITS_W_3A_CGS
+      "3": 4_CIRCUITS_W_1.5A_CGS
+      "10": SOU_CGS_2X4A
+- name: ReadAllAtsdState
+  isHidden: false
+  readWrite: R
+  resourceOperations:
+  - deviceResource: ATSD_1_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_2_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_3_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_4_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_5_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_6_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_7_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_8_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_9_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_10_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_11_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_12_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_13_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_14_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_15_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_16_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_17_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_18_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_19_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_20_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_21_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_22_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_23_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_24_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_25_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_26_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_27_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_28_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_29_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_30_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_31_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_32_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_33_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_34_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_35_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_36_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_37_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_38_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_39_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  - deviceResource: ATSD_40_STATE
+    defaultValue: "0"
+    mappings:
+      "0": NO_FAILURE
+      "1": COM_FAILURE
+      "2": MAINS_FAILURE
+  
