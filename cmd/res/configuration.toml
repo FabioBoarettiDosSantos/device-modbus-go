@@ -1,5 +1,7 @@
+MaxEventSize = 0 # value 0 unlimit the maximum event size that can be sent to message bus or core-data
+
 [Writable]
-LogLevel = 'INFO'
+LogLevel = "INFO"
   # InsecureSecrets are required for when Redis is used for message bus
   [Writable.InsecureSecrets]
     [Writable.InsecureSecrets.Sample]
@@ -7,45 +9,55 @@ LogLevel = 'INFO'
       [Writable.InsecureSecrets.Sample.Secrets]
       username = ""
       password = ""
+  [Writable.Reading]
+  ReadingUnits = true
 
 [Service]
-HealthCheckInterval = '10s'
-Host = 'localhost'
-Port = 59901
-ServerBindAddr = ''  # blank value defaults to Service.Host value
-StartupMsg = 'device modbus started'
+HealthCheckInterval = "10s"
+Host = "localhost"
+Port = 59921
+ServerBindAddr = "0.0.0.0"  # blank value defaults to Service.Host value
+StartupMsg = "device modbus ext started"
 # MaxRequestSize limit the request body size in byte of put command
 MaxRequestSize = 0 # value 0 unlimit the request size.
-RequestTimeout = '5s'
+RequestTimeout = "30s"
+  [Service.CORSConfiguration]
+  EnableCORS = true
+  CORSAllowCredentials = false
+  CORSAllowedOrigin = "*"
+  CORSAllowedMethods = "GET, POST, PUT, PATCH, DELETE"
+  CORSAllowedHeaders = "Authorization, Accept, Accept-Language, Content-Language, Content-Type, X-Correlation-ID"
+  CORSExposeHeaders = "Cache-Control, Content-Language, Content-Length, Content-Type, Expires, Last-Modified, Pragma, X-Correlation-ID"
+  CORSMaxAge = 3600
 
 [Registry]
-Host = 'localhost'
+Host = "localhost"
 Port = 8500
-Type = 'consul'
+Type = "consul"
 
 [Clients]
   [Clients.core-data]
-  Protocol = 'http'
-  Host = 'localhost'
+  Protocol = "http"
+  Host = "localhost"
   Port = 59880
 
   [Clients.core-metadata]
-  Protocol = 'http'
-  Host = 'localhost'
+  Protocol = "http"
+  Host = "localhost"
   Port = 59881
 
 [MessageQueue]
-Protocol = 'redis'
-Host = 'localhost'
-Port = 6379
-Type = 'redis'
-AuthMode = 'usernamepassword'  # required for redis messagebus (secure or insecure).
+Protocol = "mqtt"
+Host = "localhost"
+Port = 1883
+Type = "mqtt"
+AuthMode = "usernamepassword"  # required for redis messagebus (secure or insecure).
 SecretName = "redisdb"
-PublishTopicPrefix = 'edgex/events/device' # /<device-profile-name>/<device-name>/<source-name> will be added to this Publish Topic prefix
+PublishTopicPrefix = "edgex/events/device" # /<device-profile-name>/<device-name>/<source-name> will be added to this Publish Topic prefix
   [MessageQueue.Optional]
   # Default MQTT Specific options that need to be here to enable environment variable overrides of them
   # Client Identifiers
-  ClientId = "device-modbus"
+  ClientId = "device-modbus-ext"
   # Connection information
   Qos = "0" # Quality of Sevice values are 0 (At most once), 1 (At least once) or 2 (Exactly once)
   KeepAlive = "10" # Seconds (must be 2 or greater)
@@ -56,25 +68,38 @@ PublishTopicPrefix = 'edgex/events/device' # /<device-profile-name>/<device-name
 
 # Only used when EDGEX_SECURITY_SECRET_STORE=true which is now required for secure Consul
 [SecretStore]
-Type = 'vault'
-Host = 'localhost'
+Type = "vault"
+Host = "localhost"
 Port = 8200
-Path = 'device-modbus/'
-Protocol = 'http'
-RootCaCertPath = ''
-ServerName = ''
-TokenFile = '/tmp/edgex/secrets/device-modbus/secrets-token.json'
+Path = "device-modbus/"
+Protocol = "http"
+RootCaCertPath = ""
+ServerName = ""
+SecretsFile = ""
+DisableScrubSecretsFile = false
+TokenFile = "res/secrets-token.json"
   [SecretStore.Authentication]
-  AuthType = 'X-Vault-Token'
-
+  AuthType = "X-Vault-Token"
+  [SecretStore.RuntimeTokenProvider]
+  Enabled = false
+  Protocol = "https"
+  Host = "localhost"
+  Port = 59841
+  TrustDomain = "edgexfoundry.org"
+  EndpointSocket = "/tmp/edgex/secrets/spiffe/public/api.sock"
+  RequiredSecrets = "redisdb"
+  
 [Device]
 DataTransform = true
 MaxCmdOps = 128
 MaxCmdValueLen = 256
-ProfilesDir = ''
-DevicesDir = ''
+ProfilesDir = "./res/profiles"
+DevicesDir = "./res/devices"
 UpdateLastConnected = false
-Labels = []
+Labels = ['DGS-EXT']
 EnableAsyncReadings = true
-AsyncBufferSize = 16
+AsyncBufferSize = 1
 UseMessageBus = true
+[Device.Discovery]
+  Enabled = false
+  Interval = "30s"
