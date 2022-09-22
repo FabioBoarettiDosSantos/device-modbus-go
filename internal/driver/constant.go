@@ -35,7 +35,17 @@ const (
 	IS_WORD_SWAP     = "isWordSwap"
 	// RAW_TYPE define binary data type which read from Modbus device
 	RAW_TYPE = "rawType"
+	// USE VALUE FROM PREVIOUS READING ( FROM A MAP OF REGISTER )
+	USE_VALUE_FROM_MAP = "useValueFromMap"
+	PUSH_VALUE_TO_MAP  = "pushValueToMap"
 
+	// WHEN READING MULTIPLE REGISTER IT WILL INDICATE WHERE TO FIND THE INFORMATION
+	// ON THE MAP IF USING "UseValueFromMap" or "pushValueToMap"
+	// EX bigEndian uint16 of (i*2)-2   uint16 (i*2)-1
+	MAP_DATA_INDEX = "mapDataIndex"
+
+	// STRING_REGISTER_SIZE  E.g. "abcd" need 4 bytes as is 2 registers(2 words), so STRING_REGISTER_SIZE=2
+	STRING_REGISTER_SIZE   = "stringRegisterSize"
 	SERVICE_STOP_WAIT_TIME = 1
 )
 
@@ -58,5 +68,6 @@ var ValueTypeBitCountMap = map[string]uint16{
 	common.ValueTypeFloat32: 32,
 	common.ValueTypeFloat64: 64,
 
-	common.ValueTypeBool: 1,
+	common.ValueTypeBool:   1,
+	common.ValueTypeString: 16,
 }

@@ -20,6 +20,10 @@ import (
 var once sync.Once
 var driver *Driver
 
+type Register struct {
+	value []byte
+}
+
 type Driver struct {
 	Logger              logger.LoggingClient
 	AsyncCh             chan<- *sdkModel.AsyncValues
@@ -30,6 +34,8 @@ type Driver struct {
 }
 
 var concurrentCommandLimit = 100
+
+var registerMap = make(map[uint16]Register)
 
 func (d *Driver) DisconnectDevice(deviceName string, protocols map[string]models.ProtocolProperties) error {
 	d.Logger.Warn("Driver's DisconnectDevice function didn't implement")
@@ -104,25 +110,50 @@ func (d *Driver) HandleReadCommands(deviceName string, protocols map[string]mode
 	var deviceClient DeviceClient
 
 	// create device client and open connection
-	deviceClient, err = NewDeviceClient(connectionInfo)
-	if err != nil {
-		driver.Logger.Infof("Read command NewDeviceClient failed. err:%v \n", err)
-		return responses, err
-	}
+	//deviceClient, err = NewDeviceClient(connectionInfo)
+	//if err != nil {
+	//	driver.Logger.Infof("Read command NewDeviceClient failed. err:%v \n", err)
+	//	return responses, err
+	//}
 
-	err = deviceClient.OpenConnection()
-	if err != nil {
-		driver.Logger.Infof("Read command OpenConnection failed. err:%v \n", err)
-		return responses, err
-	}
+	//err = deviceClient.OpenConnection()
+	//if err != nil {
+	//	driver.Logger.Infof("Read command OpenConnection failed. err:%v \n", err)
+	//	return responses, err
+	//}
 
-	defer deviceClient.CloseConnection()
+	//defer func() { _ = deviceClient.CloseConnection() }()
 
 	// handle command requests
 	for i, req := range reqs {
+
+		commandInfo, err := createCommandInfo(&req)
+		if err != nil {
+			return nil, err
+		}
+		_, mapPresent := registerMap[commandInfo.StartingAddress]
+
+		if (!mapPresent) || (commandInfo.PushValueToMap) {
+
+			driver.Logger.Infof("WILL CREATE A CONNECTION....... Register: %v  MapPresent:%b   PushToMap:%b", commandInfo.StartingAddress, mapPresent, commandInfo.PushValueToMap)
+			deviceClient, err = NewDeviceClient(connectionInfo)
+			if err != nil {
+				driver.Logger.Infof("Read command NewDeviceClient failed. err:%v \n", err)
+				return responses, err
+			}
+
+			err = deviceClient.OpenConnection()
+			if err != nil {
+				driver.Logger.Infof("Read command OpenConnection failed. err:%v \n", err)
+				return responses, err
+			}
+
+			defer func() { _ = deviceClient.CloseConnection() }()
+		}
+
 		res, err := handleReadCommandRequest(deviceClient, req)
 		if err != nil {
-			driver.Logger.Infof("Read command failed. Cmd:%v err:%v \n", req.DeviceResourceName, err)
+			//driver.Logger.Infof("Read command failed. Cmd:%v err:%v \n", req.DeviceResourceName, err)
 			return responses, err
 		}
 
@@ -134,6 +165,7 @@ func (d *Driver) HandleReadCommands(deviceName string, protocols map[string]mode
 
 func handleReadCommandRequest(deviceClient DeviceClient, req sdkModel.CommandRequest) (*sdkModel.CommandValue, error) {
 	var response []byte
+	var responseFinal []byte
 	var result = &sdkModel.CommandValue{}
 	var err error
 
@@ -141,19 +173,46 @@ func handleReadCommandRequest(deviceClient DeviceClient, req sdkModel.CommandReq
 	if err != nil {
 		return nil, err
 	}
+	driver.Logger.Infof("READ LENGTH : %v \n", commandInfo.Length)
+	_, mapPresent := registerMap[commandInfo.StartingAddress]
+	if (commandInfo.UseValueFromMap) && (mapPresent) {
+		//USE VALUE FROM A MAP OF REGISTERS
+		response = registerMap[commandInfo.StartingAddress].value
+		//driver.Logger.Infof("Value found on MAP addr : %v,  Bytes: %v \n", commandInfo.StartingAddress, response)
 
-	response, err = deviceClient.GetValue(commandInfo)
-	if err != nil {
-		return result, err
+	} else {
+
+		response, err = deviceClient.GetValue(commandInfo)
+		if err != nil {
+			return result, err
+		}
+
 	}
 
-	result, err = TransformDataBytesToResult(&req, response, commandInfo)
+	if commandInfo.PushValueToMap {
+		//PUSH VALUE OF REGISTER TO THE MAP OF REGS//
+		registerMap[uint16(commandInfo.StartingAddress)] = Register{(response)}
+		//driver.Logger.Infof("Value Pushed To MAP addr : %v,  Bytes: %v \n", commandInfo.StartingAddress, response)
+	}
+
+	//Get Slice of the data using the MapIndex
+	var initArray = (commandInfo.MapDataIndex * 2) - 2
+	var endArray = (commandInfo.MapDataIndex * 2)
+
+	responseFinal = response[initArray:]
+
+	driver.Logger.Info(fmt.Sprintf("ArrayIndexs %v / %v = %v ", initArray, endArray, responseFinal))
+
+	result, err = TransformDataBytesToResult(&req, responseFinal, commandInfo)
+	driver.Logger.Infof("Value Transformed: %v \n", result)
 
 	if err != nil {
 		return result, err
 	} else {
 		driver.Logger.Infof("Read command finished. Cmd:%v, %v \n", req.DeviceResourceName, result)
 	}
+
+	//IT WILL PUSH THE REG VALUE TO THE MAP
 
 	return result, nil
 }
@@ -184,7 +243,7 @@ func (d *Driver) HandleWriteCommands(deviceName string, protocols map[string]mod
 		return err
 	}
 
-	defer deviceClient.CloseConnection()
+	defer func() { _ = deviceClient.CloseConnection() }()
 
 	// handle command requests
 	for i, req := range reqs {
