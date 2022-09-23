@@ -2,7 +2,7 @@ MaxEventSize = 0 # value 0 unlimit the maximum event size that can be sent to me
 
 [Writable]
 LogLevel = "INFO"
-  # InsecureSecrets are required for when Redis is used for message bus
+  # ffff. InsecureSecrets are required for when Redis is used for message bus
   [Writable.InsecureSecrets]
     [Writable.InsecureSecrets.Sample]
     path = "redisdb"
