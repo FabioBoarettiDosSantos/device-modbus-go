@@ -2633,7 +2633,2807 @@ deviceResources:
     primaryTable: INPUT_REGISTERS
     rawType: Uint16
     startingAddress: 917
-    stringRegisterSize: 41 
+    stringRegisterSize: 41
+- description: Luminaire Configuration 1
+  name: LUM_CONFIG_1
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: true
+    useValueFromMap: false 
+    mapDataIndex: 1
+- description: Luminaire Configuration 2
+  name: LUM_CONFIG_2
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 2
+- description: Luminaire Configuration 3
+  name: LUM_CONFIG_3
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 3
+- description: Luminaire Configuration 4
+  name: LUM_CONFIG_4
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 4
+- description: Luminaire Configuration 5
+  name: LUM_CONFIG_5
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 5
+- description: Luminaire Configuration 6
+  name: LUM_CONFIG_6
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 6
+- description: Luminaire Configuration 7
+  name: LUM_CONFIG_7
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 7
+- description: Luminaire Configuration 8
+  name: LUM_CONFIG_8
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 8
+- description: Luminaire Configuration 9
+  name: LUM_CONFIG_9
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 9
+- description: Luminaire Configuration 10
+  name: LUM_CONFIG_10
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 10
+- description: Luminaire Configuration 11
+  name: LUM_CONFIG_11
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 11
+- description: Luminaire Configuration 12
+  name: LUM_CONFIG_12
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 12
+- description: Luminaire Configuration 13
+  name: LUM_CONFIG_13
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 13
+- description: Luminaire Configuration 14
+  name: LUM_CONFIG_14
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 14
+- description: Luminaire Configuration 15
+  name: LUM_CONFIG_15
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 15
+- description: Luminaire Configuration 16
+  name: LUM_CONFIG_16
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 16
+- description: Luminaire Configuration 17
+  name: LUM_CONFIG_17
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 17
+- description: Luminaire Configuration 18
+  name: LUM_CONFIG_18
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 18
+- description: Luminaire Configuration 19
+  name: LUM_CONFIG_19
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 19
+- description: Luminaire Configuration 20
+  name: LUM_CONFIG_20
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 20
+- description: Luminaire Configuration 21
+  name: LUM_CONFIG_21
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 21
+- description: Luminaire Configuration 22
+  name: LUM_CONFIG_22
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 22
+- description: Luminaire Configuration 23
+  name: LUM_CONFIG_23
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 23
+- description: Luminaire Configuration 24
+  name: LUM_CONFIG_24
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 24
+- description: Luminaire Configuration 25
+  name: LUM_CONFIG_25
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 25
+- description: Luminaire Configuration 26
+  name: LUM_CONFIG_26
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 26
+- description: Luminaire Configuration 27
+  name: LUM_CONFIG_27
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 27
+- description: Luminaire Configuration 28
+  name: LUM_CONFIG_28
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 28
+- description: Luminaire Configuration 29
+  name: LUM_CONFIG_29
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 29
+- description: Luminaire Configuration 30
+  name: LUM_CONFIG_30
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 30
+- description: Luminaire Configuration 31
+  name: LUM_CONFIG_31
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 31
+- description: Luminaire Configuration 32
+  name: LUM_CONFIG_32
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 32
+- description: Luminaire Configuration 33
+  name: LUM_CONFIG_33
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 33
+- description: Luminaire Configuration 34
+  name: LUM_CONFIG_34
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 34
+- description: Luminaire Configuration 35
+  name: LUM_CONFIG_35
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 35
+- description: Luminaire Configuration 36
+  name: LUM_CONFIG_36
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 36
+- description: Luminaire Configuration 37
+  name: LUM_CONFIG_37
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 37
+- description: Luminaire Configuration 38
+  name: LUM_CONFIG_38
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 38
+- description: Luminaire Configuration 39
+  name: LUM_CONFIG_39
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 39
+- description: Luminaire Configuration 40
+  name: LUM_CONFIG_40
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 40
+- description: Luminaire Configuration 41
+  name: LUM_CONFIG_41
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 41
+- description: Luminaire Configuration 42
+  name: LUM_CONFIG_42
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 42
+- description: Luminaire Configuration 43
+  name: LUM_CONFIG_43
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 43
+- description: Luminaire Configuration 44
+  name: LUM_CONFIG_44
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 44
+- description: Luminaire Configuration 45
+  name: LUM_CONFIG_45
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 45
+- description: Luminaire Configuration 46
+  name: LUM_CONFIG_46
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 46
+- description: Luminaire Configuration 47
+  name: LUM_CONFIG_47
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 47
+- description: Luminaire Configuration 48
+  name: LUM_CONFIG_48
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 48
+- description: Luminaire Configuration 49
+  name: LUM_CONFIG_49
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 49
+- description: Luminaire Configuration 50
+  name: LUM_CONFIG_50
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 50
+- description: Luminaire Configuration 51
+  name: LUM_CONFIG_51
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 51
+- description: Luminaire Configuration 52
+  name: LUM_CONFIG_52
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 52
+- description: Luminaire Configuration 53
+  name: LUM_CONFIG_53
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 53
+- description: Luminaire Configuration 54
+  name: LUM_CONFIG_54
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 54
+- description: Luminaire Configuration 55
+  name: LUM_CONFIG_55
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 55
+- description: Luminaire Configuration 56
+  name: LUM_CONFIG_56
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 56
+- description: Luminaire Configuration 57
+  name: LUM_CONFIG_57
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 57
+- description: Luminaire Configuration 58
+  name: LUM_CONFIG_58
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 58
+- description: Luminaire Configuration 59
+  name: LUM_CONFIG_59
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 59
+- description: Luminaire Configuration 60
+  name: LUM_CONFIG_60
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 60
+- description: Luminaire Configuration 61
+  name: LUM_CONFIG_61
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 61
+- description: Luminaire Configuration 62
+  name: LUM_CONFIG_62
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 62
+- description: Luminaire Configuration 63
+  name: LUM_CONFIG_63
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 63
+- description: Luminaire Configuration 64
+  name: LUM_CONFIG_64
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 64
+- description: Luminaire Configuration 65
+  name: LUM_CONFIG_65
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 65
+- description: Luminaire Configuration 66
+  name: LUM_CONFIG_66
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 66
+- description: Luminaire Configuration 67
+  name: LUM_CONFIG_67
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 67
+- description: Luminaire Configuration 68
+  name: LUM_CONFIG_68
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 68
+- description: Luminaire Configuration 69
+  name: LUM_CONFIG_69
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 69
+- description: Luminaire Configuration 70
+  name: LUM_CONFIG_70
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 70
+- description: Luminaire Configuration 71
+  name: LUM_CONFIG_71
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 71
+- description: Luminaire Configuration 72
+  name: LUM_CONFIG_72
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 72
+- description: Luminaire Configuration 73
+  name: LUM_CONFIG_73
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 73
+- description: Luminaire Configuration 74
+  name: LUM_CONFIG_74
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 74
+- description: Luminaire Configuration 75
+  name: LUM_CONFIG_75
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 75
+- description: Luminaire Configuration 76
+  name: LUM_CONFIG_76
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 76
+- description: Luminaire Configuration 77
+  name: LUM_CONFIG_77
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 77
+- description: Luminaire Configuration 78
+  name: LUM_CONFIG_78
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 78
+- description: Luminaire Configuration 79
+  name: LUM_CONFIG_79
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 79
+- description: Luminaire Configuration 80
+  name: LUM_CONFIG_80
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 80
+- description: Luminaire Configuration 81
+  name: LUM_CONFIG_81
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 81
+- description: Luminaire Configuration 82
+  name: LUM_CONFIG_82
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 82
+- description: Luminaire Configuration 83
+  name: LUM_CONFIG_83
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 83
+- description: Luminaire Configuration 84
+  name: LUM_CONFIG_84
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 84
+- description: Luminaire Configuration 85
+  name: LUM_CONFIG_85
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 85
+- description: Luminaire Configuration 86
+  name: LUM_CONFIG_86
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 86
+- description: Luminaire Configuration 87
+  name: LUM_CONFIG_87
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 87
+- description: Luminaire Configuration 88
+  name: LUM_CONFIG_88
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 88
+- description: Luminaire Configuration 89
+  name: LUM_CONFIG_89
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 89
+- description: Luminaire Configuration 90
+  name: LUM_CONFIG_90
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 90
+- description: Luminaire Configuration 91
+  name: LUM_CONFIG_91
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 91
+- description: Luminaire Configuration 92
+  name: LUM_CONFIG_92
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 92
+- description: Luminaire Configuration 93
+  name: LUM_CONFIG_93
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 93
+- description: Luminaire Configuration 94
+  name: LUM_CONFIG_94
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 94
+- description: Luminaire Configuration 95
+  name: LUM_CONFIG_95
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 95
+- description: Luminaire Configuration 96
+  name: LUM_CONFIG_96
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 96
+- description: Luminaire Configuration 97
+  name: LUM_CONFIG_97
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 97
+- description: Luminaire Configuration 98
+  name: LUM_CONFIG_98
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 98
+- description: Luminaire Configuration 99
+  name: LUM_CONFIG_99
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 99
+- description: Luminaire Configuration 100
+  name: LUM_CONFIG_100
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 505
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 100
+- description: Luminaire Configuration 101
+  name: LUM_CONFIG_101
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: true
+    useValueFromMap: false 
+    mapDataIndex: 1
+- description: Luminaire Configuration 102
+  name: LUM_CONFIG_102
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 2
+- description: Luminaire Configuration 103
+  name: LUM_CONFIG_103
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 3
+- description: Luminaire Configuration 104
+  name: LUM_CONFIG_104
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 4
+- description: Luminaire Configuration 105
+  name: LUM_CONFIG_105
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 5
+- description: Luminaire Configuration 106
+  name: LUM_CONFIG_106
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 6
+- description: Luminaire Configuration 107
+  name: LUM_CONFIG_107
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 7
+- description: Luminaire Configuration 108
+  name: LUM_CONFIG_108
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 8
+- description: Luminaire Configuration 109
+  name: LUM_CONFIG_109
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 9
+- description: Luminaire Configuration 110
+  name: LUM_CONFIG_110
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 10
+- description: Luminaire Configuration 111
+  name: LUM_CONFIG_111
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 11
+- description: Luminaire Configuration 112
+  name: LUM_CONFIG_112
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 12
+- description: Luminaire Configuration 113
+  name: LUM_CONFIG_113
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 13
+- description: Luminaire Configuration 114
+  name: LUM_CONFIG_114
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 14
+- description: Luminaire Configuration 115
+  name: LUM_CONFIG_115
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 15
+- description: Luminaire Configuration 116
+  name: LUM_CONFIG_116
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 16
+- description: Luminaire Configuration 117
+  name: LUM_CONFIG_117
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 17
+- description: Luminaire Configuration 118
+  name: LUM_CONFIG_118
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 18
+- description: Luminaire Configuration 119
+  name: LUM_CONFIG_119
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 19
+- description: Luminaire Configuration 120
+  name: LUM_CONFIG_120
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 20
+- description: Luminaire Configuration 121
+  name: LUM_CONFIG_121
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 21
+- description: Luminaire Configuration 122
+  name: LUM_CONFIG_122
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 22
+- description: Luminaire Configuration 123
+  name: LUM_CONFIG_123
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 23
+- description: Luminaire Configuration 124
+  name: LUM_CONFIG_124
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 24
+- description: Luminaire Configuration 125
+  name: LUM_CONFIG_125
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 25
+- description: Luminaire Configuration 126
+  name: LUM_CONFIG_126
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 26
+- description: Luminaire Configuration 127
+  name: LUM_CONFIG_127
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 27
+- description: Luminaire Configuration 128
+  name: LUM_CONFIG_128
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 28
+- description: Luminaire Configuration 129
+  name: LUM_CONFIG_129
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 29
+- description: Luminaire Configuration 130
+  name: LUM_CONFIG_130
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 30
+- description: Luminaire Configuration 131
+  name: LUM_CONFIG_131
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 31
+- description: Luminaire Configuration 132
+  name: LUM_CONFIG_132
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 32
+- description: Luminaire Configuration 133
+  name: LUM_CONFIG_133
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 33
+- description: Luminaire Configuration 134
+  name: LUM_CONFIG_134
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 34
+- description: Luminaire Configuration 135
+  name: LUM_CONFIG_135
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 35
+- description: Luminaire Configuration 136
+  name: LUM_CONFIG_136
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 36
+- description: Luminaire Configuration 137
+  name: LUM_CONFIG_137
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 37
+- description: Luminaire Configuration 138
+  name: LUM_CONFIG_138
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 38
+- description: Luminaire Configuration 139
+  name: LUM_CONFIG_139
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 39
+- description: Luminaire Configuration 140
+  name: LUM_CONFIG_140
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 40
+- description: Luminaire Configuration 141
+  name: LUM_CONFIG_141
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 41
+- description: Luminaire Configuration 142
+  name: LUM_CONFIG_142
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 42
+- description: Luminaire Configuration 143
+  name: LUM_CONFIG_143
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 43
+- description: Luminaire Configuration 144
+  name: LUM_CONFIG_144
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 44
+- description: Luminaire Configuration 145
+  name: LUM_CONFIG_145
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 45
+- description: Luminaire Configuration 146
+  name: LUM_CONFIG_146
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 46
+- description: Luminaire Configuration 147
+  name: LUM_CONFIG_147
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 47
+- description: Luminaire Configuration 148
+  name: LUM_CONFIG_148
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 48
+- description: Luminaire Configuration 149
+  name: LUM_CONFIG_149
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 49
+- description: Luminaire Configuration 150
+  name: LUM_CONFIG_150
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 50
+- description: Luminaire Configuration 151
+  name: LUM_CONFIG_151
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 51
+- description: Luminaire Configuration 152
+  name: LUM_CONFIG_152
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 52
+- description: Luminaire Configuration 153
+  name: LUM_CONFIG_153
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 53
+- description: Luminaire Configuration 154
+  name: LUM_CONFIG_154
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 54
+- description: Luminaire Configuration 155
+  name: LUM_CONFIG_155
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 55
+- description: Luminaire Configuration 156
+  name: LUM_CONFIG_156
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 56
+- description: Luminaire Configuration 157
+  name: LUM_CONFIG_157
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 57
+- description: Luminaire Configuration 158
+  name: LUM_CONFIG_158
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 58
+- description: Luminaire Configuration 159
+  name: LUM_CONFIG_159
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 59
+- description: Luminaire Configuration 160
+  name: LUM_CONFIG_160
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 60
+- description: Luminaire Configuration 161
+  name: LUM_CONFIG_161
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 61
+- description: Luminaire Configuration 162
+  name: LUM_CONFIG_162
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 62
+- description: Luminaire Configuration 163
+  name: LUM_CONFIG_163
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 63
+- description: Luminaire Configuration 164
+  name: LUM_CONFIG_164
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 64
+- description: Luminaire Configuration 165
+  name: LUM_CONFIG_165
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 65
+- description: Luminaire Configuration 166
+  name: LUM_CONFIG_166
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 66
+- description: Luminaire Configuration 167
+  name: LUM_CONFIG_167
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 67
+- description: Luminaire Configuration 168
+  name: LUM_CONFIG_168
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 68
+- description: Luminaire Configuration 169
+  name: LUM_CONFIG_169
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 69
+- description: Luminaire Configuration 170
+  name: LUM_CONFIG_170
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 70
+- description: Luminaire Configuration 171
+  name: LUM_CONFIG_171
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 71
+- description: Luminaire Configuration 172
+  name: LUM_CONFIG_172
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 72
+- description: Luminaire Configuration 173
+  name: LUM_CONFIG_173
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 73
+- description: Luminaire Configuration 174
+  name: LUM_CONFIG_174
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 74
+- description: Luminaire Configuration 175
+  name: LUM_CONFIG_175
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 75
+- description: Luminaire Configuration 176
+  name: LUM_CONFIG_176
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 76
+- description: Luminaire Configuration 177
+  name: LUM_CONFIG_177
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 77
+- description: Luminaire Configuration 178
+  name: LUM_CONFIG_178
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 78
+- description: Luminaire Configuration 179
+  name: LUM_CONFIG_179
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 79
+- description: Luminaire Configuration 180
+  name: LUM_CONFIG_180
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 80
+- description: Luminaire Configuration 181
+  name: LUM_CONFIG_181
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 81
+- description: Luminaire Configuration 182
+  name: LUM_CONFIG_182
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 82
+- description: Luminaire Configuration 183
+  name: LUM_CONFIG_183
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 83
+- description: Luminaire Configuration 184
+  name: LUM_CONFIG_184
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 84
+- description: Luminaire Configuration 185
+  name: LUM_CONFIG_185
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 85
+- description: Luminaire Configuration 186
+  name: LUM_CONFIG_186
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 86
+- description: Luminaire Configuration 187
+  name: LUM_CONFIG_187
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 87
+- description: Luminaire Configuration 188
+  name: LUM_CONFIG_188
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 88
+- description: Luminaire Configuration 189
+  name: LUM_CONFIG_189
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 89
+- description: Luminaire Configuration 190
+  name: LUM_CONFIG_190
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 90
+- description: Luminaire Configuration 191
+  name: LUM_CONFIG_191
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 91
+- description: Luminaire Configuration 192
+  name: LUM_CONFIG_192
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 92
+- description: Luminaire Configuration 193
+  name: LUM_CONFIG_193
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 93
+- description: Luminaire Configuration 194
+  name: LUM_CONFIG_194
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 94
+- description: Luminaire Configuration 195
+  name: LUM_CONFIG_195
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 95
+- description: Luminaire Configuration 196
+  name: LUM_CONFIG_196
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 96
+- description: Luminaire Configuration 197
+  name: LUM_CONFIG_197
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 97
+- description: Luminaire Configuration 198
+  name: LUM_CONFIG_198
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 98
+- description: Luminaire Configuration 199
+  name: LUM_CONFIG_199
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 99
+- description: Luminaire Configuration 200
+  name: LUM_CONFIG_200
+  isHidden: false
+  properties:
+    valueType: Uint16
+    readWrite: R
+  attributes:
+    primaryTable: INPUT_REGISTERS
+    rawType: Uint16
+    startingAddress: 605
+    stringRegisterSize: 100 
+    pushValueToMap: false
+    useValueFromMap: true 
+    mapDataIndex: 100
 deviceCommands:
 - name: Temperature
   isHidden: false
