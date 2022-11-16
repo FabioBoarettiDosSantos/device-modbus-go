@@ -1,7 +1,7 @@
 apiVersion: "v2"
 name: DGS-EXT
 manufacturer: Eaton
-description: The Eaton DGS over Modbus TCP.
+description: The Eaton DGS over Modbus TCP1.
 model: DGS
 labels: [Web, Modbus TCP, SNMP]
 deviceResources:
